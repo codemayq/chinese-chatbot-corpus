@@ -1,7 +1,7 @@
 import chardet
 import codecs
-from config import *
-import os
+from config import Config
+
 
 def str_q2b(s):
     res = ""
@@ -31,7 +31,7 @@ def generate_single_pairs_from_multi_turn(utterances):
 
 
 def check_format(file_name):
-    file = codecs.open(file_name, encoding=encoding)
+    file = codecs.open(file_name, encoding=Config.encoding)
     for index, line in enumerate(file):
         pair = line.split("\t")
         if not len(pair) == 2:
@@ -41,8 +41,9 @@ def check_format(file_name):
 
     file.close()
 
+
 def format_refine(file_name):
-    file = codecs.open(file_name, encoding=encoding)
+    file = codecs.open(file_name, encoding=Config.encoding)
     valid_lines = []
     for index, line in enumerate(file):
         pair = line.split("\t")
@@ -50,12 +51,7 @@ def format_refine(file_name):
             valid_lines.append(line)
     file.close()
 
-    file = codecs.open(file_name, "w", encoding=encoding)
+    file = codecs.open(file_name, "w", encoding=Config.encoding)
     for line in valid_lines:
         file.write(line)
     file.close()
-
-
-if __name__ == '__main__':
-    sd = []
-    print(isinstance(sd, str))

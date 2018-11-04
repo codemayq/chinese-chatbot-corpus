@@ -96,3 +96,6 @@ ENV/
 # Rope project settings
 .ropeproject
 .idea
+raw_chat_corpus/
+*.zip
+clean_chat_corpus/

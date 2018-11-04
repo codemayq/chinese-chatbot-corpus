@@ -1,17 +1,17 @@
 import codecs
 import os
-from config import *
+from config import Config
 from util import *
 from language.langconv import *
 
 
 def prepocess(raw_corpus_file_name, result_file_name):
-    raw_corpus_file = codecs.open(raw_corpus_file_name, encoding=encoding, errors="replace")
-    result_file = codecs.open(result_file_name, "w", encoding=encoding)
+    raw_corpus_file = codecs.open(raw_corpus_file_name, encoding=Config.encoding, errors="replace")
+    result_file = codecs.open(result_file_name, "w", encoding=Config.encoding)
 
     for index, line in enumerate(raw_corpus_file):
-        if index % 10000 == 0:
-            print(index)
+        if index % 100000 == 0:
+            print(raw_corpus_file_name, index)
         if "{" in line or "qq" in line or "菲菲" in line:
             continue
         pair = line.strip().split("|")
@@ -22,8 +22,9 @@ def prepocess(raw_corpus_file_name, result_file_name):
     result_file.close()
 
 
-if __name__ == '__main__':
-    raw_corpus_file_name = r"C:\Users\mayongqiang\Desktop\corpus\chat\qingyun\12万对话语料青云库.csv"
-    result_file_name = os.path.join(result_root, "qingyun.tsv")
+def qingyun_process_pipeline():
+    print("qingyun_process_pipeline")
+    raw_corpus_file_name = Config.raw_qingyun_corpus_path
+    result_file_name = os.path.join(Config.clean_chat_corpus_root, "qingyun.tsv")
     prepocess(raw_corpus_file_name, result_file_name)
     format_refine(result_file_name)
