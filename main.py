@@ -1,9 +1,8 @@
-from config import Config
 import os
 
-
-from process_pipelines.douban import douban_process_pipeline
+from config import Config
 from process_pipelines.chatterbot import chatterbot_process_pipeline
+from process_pipelines.douban import douban_process_pipeline
 from process_pipelines.ptt import ptt_process_pipeline
 from process_pipelines.qingyun import qingyun_process_pipeline
 from process_pipelines.subtitle import subtitle_process_pipeline

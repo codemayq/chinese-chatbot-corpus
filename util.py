@@ -1,5 +1,7 @@
-import chardet
 import codecs
+
+import chardet
+
 from config import Config
 
 
@@ -26,7 +28,7 @@ def check_file_encoding(file_name):
 def generate_single_pairs_from_multi_turn(utterances):
     pairs = []
     for index in range(len(utterances) - 1):
-        pairs.append((utterances[index], utterances[index+1]))
+        pairs.append((utterances[index], utterances[index + 1]))
     return pairs
 
 

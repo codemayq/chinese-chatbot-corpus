@@ -1,5 +1,6 @@
 import codecs
 import os
+
 from config import Config
 from util import *
 
@@ -14,8 +15,8 @@ def preprocess(raw_corpus_post_file_name, raw_corpus_response_file_name, result_
         if index % 100000 == 0:
             print(raw_corpus_post_file_name, raw_corpus_response_file_name, index)
 
-        post = pair[0].strip().replace(" ","")
-        response = pair[1].strip().replace(" ","")
+        post = pair[0].strip().replace(" ", "")
+        response = pair[1].strip().replace(" ", "")
 
         result.write(post + "\t" + response + "\n")
 

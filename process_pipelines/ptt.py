@@ -1,8 +1,9 @@
 import codecs
 import os
+
 from config import Config
-from util import *
 from language.langconv import *
+from util import *
 
 
 def prepocess(raw_corpus_file_name, result_file_name):

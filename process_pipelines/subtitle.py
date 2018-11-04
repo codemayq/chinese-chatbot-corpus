@@ -1,5 +1,6 @@
 import codecs
 import os
+
 from config import Config
 from util import *
 
@@ -15,7 +16,7 @@ def prepocess(raw_corpus_file_name, result_file_name):
     session_lengths = []
 
     for index, line in enumerate(raw_corpus_file):
-        if index % 100000 ==0:
+        if index % 100000 == 0:
             print(raw_corpus_file_name, index)
         if line.startswith(start_end_symbol):
             if len(single_session) > 1:
