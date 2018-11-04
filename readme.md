@@ -32,7 +32,7 @@ tieba（贴吧论坛回帖语料） | 232W | 偶然找到的 | 多轮，有噪�
 weibo（微博语料） | 443W | 来自华为的paper | 仍有一些噪音  | Q:北京的小纯洁们，周日见。#硬汉摆拍清纯照# A:嗷嗷大湿的左手在干嘛，看着小纯洁撸么。 | 否
 xiaohuangji（小黄鸡语料） | 45W | 原人人网项目语料 | 有一些不雅对话，少量噪音 | Q:你谈过恋爱么	A:谈过，哎，别提了，伤心..。 | 否
 
-语料名称 | 语料URL 
+语料名称 | 语料原始URL（即出处，尊重原始版权） 
 ---|---
 chatterbot | https://github.com/gunthercox/chatterbot-corpus/tree/master/chatterbot_corpus/data/chinese
 douban（豆瓣多轮） | https://github.com/MarkWuNLP/MultiTurnResponseSelection 
