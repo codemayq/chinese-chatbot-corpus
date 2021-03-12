@@ -50,7 +50,12 @@ xiaohuangji（小黄鸡语料） | https://github.com/candlewill/Dialog_Corpus
 
 
 # 使用方法
-下载语料 https://pan.baidu.com/s/1szmNZQrwh9y994uO8DFL_A  提取码：f2ex
+
+下载语料
+### 百度网盘
+ https://pan.baidu.com/s/1szmNZQrwh9y994uO8DFL_A  提取码：f2ex
+### Google Drive
+https://drive.google.com/file/d/1So-m83NdUHexfjJ912rQ4GItdLvnmJMD/view?usp=sharing
 
 将解压后的raw_chat_corpus文件夹放到当前目录下
 目录结构为
