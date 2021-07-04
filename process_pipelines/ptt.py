@@ -57,5 +57,5 @@ def ptt_process_pipeline():
         prepocess_v1(raw_corpus_file_name_v1, result_file_name)
         format_refine(result_file_name)
     elif os.path.exists(raw_corpus_file_name_v2):
-        prepocess_v1(raw_corpus_file_name_v2, result_file_name)
+        prepocess_v2(raw_corpus_file_name_v2, result_file_name)
         format_refine(result_file_name)
