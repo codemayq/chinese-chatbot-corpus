@@ -69,7 +69,8 @@ raw_chat_corpus
 -- main.py
 -- ...
 ```
-执行命令即可
+
+然后修改 config.py 中的 raw_chat_corpus_root 变量 为自己的目录，再执行main.py 脚本即可
 ```bash
 python main.py
 ```
