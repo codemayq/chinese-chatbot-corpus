@@ -48,10 +48,9 @@ xiaohuangji（小黄鸡语料） | https://github.com/candlewill/Dialog_Corpus
 # 使用方法
 
 下载语料
-### 百度网盘
-链接: https://pan.baidu.com/s/17rIIkhQN2ZNULOGvfE2OWQ  密码: iani
-
-> 因为一些原因，百度网盘的链接不包含PTT语料，请自行下载放在相应目录
+### 阿里云盘
+https://www.aliyundrive.com/s/qXBdAYtz5j5
+提取码: 81ao
 
 ### Google Drive
 https://drive.google.com/file/d/1So-m83NdUHexfjJ912rQ4GItdLvnmJMD/view?usp=sharing
