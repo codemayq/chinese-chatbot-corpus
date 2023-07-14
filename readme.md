@@ -105,3 +105,12 @@ https://zhuanlan.zhihu.com/p/34927757
 
 # 版权说明
 本项目为非商业项目，为纯搜集和汇总资料，如有侵权，请在issue下留言。
+
+```bibtex
+@Misc{chinese-chatbot-corpus,
+  title = {Chinese Chatbot Corpus},
+  author = {codemayq},
+  howpublished = {\url{https://github.com/codemayq/chinese_chatbot_corpus}},
+  year = {2018}
+}
+```
